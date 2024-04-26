@@ -2,4 +2,11 @@ datasets/ETH3D
 datasets/Middlebury
 datasets/ssh
 datasets/lhw/*
-demo_output/*
+demo_output/dynamic-scene-rvc
+demo_output/lhw-rvc
+demo_output/lhw-rvc-iter200
+demo_output/lhw-rvc-reversed
+demo_output/middlebury
+demo_output/ssh-carla
+demo_output/ssh-middlebury
+demo_output/ssh-rvc
