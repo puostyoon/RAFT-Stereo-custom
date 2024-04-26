@@ -1,0 +1,5 @@
+datasets/ETH3D
+datasets/Middlebury
+datasets/ssh
+datasets/lhw/*
+demo_output/*

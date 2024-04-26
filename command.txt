@@ -1,0 +1,32 @@
+ssh-checkpoint:middlebury
+python demo.py --restore_ckpt models/raftstereo-middlebury.pth --corr_implementation alt --mixed_precision -l=datasets/ssh/20240312/scene00/rectified/camera02/*/*.png -r=datasets/ssh/20240312/scene00/rectified/camera01/*/*.png
+python demo.py --restore_ckpt models/raftstereo-middlebury.pth --corr_implementation alt --mixed_precision -l=datasets/ssh/20240312/scene01/rectified/camera02/*/*.png -r=datasets/ssh/20240312/scene01/rectified/camera01/*/*.png
+python demo.py --restore_ckpt models/raftstereo-middlebury.pth --corr_implementation alt --mixed_precision -l=datasets/ssh/20240312/scene02/rectified/camera02/*/*.png -r=datasets/ssh/20240312/scene02/rectified/camera01/*/*.png
+python demo.py --restore_ckpt models/raftstereo-middlebury.pth --corr_implementation alt --mixed_precision -l=datasets/ssh/20240312/scene00/rectified_gamma_22/camera02/*/*.png -r=datasets/ssh/20240312/scene00/rectified_gamma_22/camera01/*/*.png
+python demo.py --restore_ckpt models/raftstereo-middlebury.pth --corr_implementation alt --mixed_precision -l=datasets/ssh/20240312/scene01/rectified_gamma_22/camera02/*/*.png -r=datasets/ssh/20240312/scene01/rectified_gamma_22/camera01/*/*.png
+python demo.py --restore_ckpt models/raftstereo-middlebury.pth --corr_implementation alt --mixed_precision -l=datasets/ssh/20240312/scene02/rectified_gamma_22/camera02/*/*.png -r=datasets/ssh/20240312/scene02/rectified_gamma_22/camera01/*/*.png
+python demo.py --restore_ckpt models/raftstereo-middlebury.pth --corr_implementation alt --mixed_precision -l=datasets/ssh/20240312/scene00/rectified_gamma_35/camera02/*/*.png -r=datasets/ssh/20240312/scene00/rectified_gamma_35/camera01/*/*.png
+python demo.py --restore_ckpt models/raftstereo-middlebury.pth --corr_implementation alt --mixed_precision -l=datasets/ssh/20240312/scene01/rectified_gamma_35/camera02/*/*.png -r=datasets/ssh/20240312/scene01/rectified_gamma_35/camera01/*/*.png
+python demo.py --restore_ckpt models/raftstereo-middlebury.pth --corr_implementation alt --mixed_precision -l=datasets/ssh/20240312/scene02/rectified_gamma_35/camera02/*/*.png -r=datasets/ssh/20240312/scene02/rectified_gamma_35/camera01/*/*.png
+
+ssh-checkpoint:rvc
+python demo.py --restore_ckpt models/iraftstereo_rvc.pth --context_norm instance -l=datasets/ssh/20240312/scene00/rectified/camera02/*/*.png -r=datasets/ssh/20240312/scene00/rectified/camera01/*/*.png
+python demo.py --restore_ckpt models/iraftstereo_rvc.pth --context_norm instance -l=datasets/ssh/20240312/scene01/rectified/camera02/*/*.png -r=datasets/ssh/20240312/scene01/rectified/camera01/*/*.png
+python demo.py --restore_ckpt models/iraftstereo_rvc.pth --context_norm instance -l=datasets/ssh/20240312/scene02/rectified/camera02/*/*.png -r=datasets/ssh/20240312/scene02/rectified/camera01/*/*.png
+python demo.py --restore_ckpt models/iraftstereo_rvc.pth --context_norm instance -l=datasets/ssh/20240312/scene00/rectified_gamma_22/camera02/*/*.png -r=datasets/ssh/20240312/scene00/rectified_gamma_22/camera01/*/*.png
+python demo.py --restore_ckpt models/iraftstereo_rvc.pth --context_norm instance -l=datasets/ssh/20240312/scene01/rectified_gamma_22/camera02/*/*.png -r=datasets/ssh/20240312/scene01/rectified_gamma_22/camera01/*/*.png
+python demo.py --restore_ckpt models/iraftstereo_rvc.pth --context_norm instance -l=datasets/ssh/20240312/scene02/rectified_gamma_22/camera02/*/*.png -r=datasets/ssh/20240312/scene02/rectified_gamma_22/camera01/*/*.png
+python demo.py --restore_ckpt models/iraftstereo_rvc.pth --context_norm instance -l=datasets/ssh/20240312/scene00/rectified_gamma_35/camera02/*/*.png -r=datasets/ssh/20240312/scene00/rectified_gamma_35/camera01/*/*.png
+python demo.py --restore_ckpt models/iraftstereo_rvc.pth --context_norm instance -l=datasets/ssh/20240312/scene01/rectified_gamma_35/camera02/*/*.png -r=datasets/ssh/20240312/scene01/rectified_gamma_35/camera01/*/*.png
+python demo.py --restore_ckpt models/iraftstereo_rvc.pth --context_norm instance -l=datasets/ssh/20240312/scene02/rectified_gamma_35/camera02/*/*.png -r=datasets/ssh/20240312/scene02/rectified_gamma_35/camera01/*/*.png
+
+ssh-checkpoint:raftstereo_carla(juhyung's)
+python demo.py --restore_ckpt models/raftstereo_carla.pth --corr_implementation alt --mixed_precision -l=datasets/ssh/20240312/scene00/rectified/camera02/*/*.png -r=datasets/ssh/20240312/scene00/rectified/camera01/*/*.png
+python demo.py --restore_ckpt models/raftstereo_carla.pth --corr_implementation alt --mixed_precision -l=datasets/ssh/20240312/scene01/rectified/camera02/*/*.png -r=datasets/ssh/20240312/scene01/rectified/camera01/*/*.png
+python demo.py --restore_ckpt models/raftstereo_carla.pth --corr_implementation alt --mixed_precision -l=datasets/ssh/20240312/scene02/rectified/camera02/*/*.png -r=datasets/ssh/20240312/scene02/rectified/camera01/*/*.png
+python demo.py --restore_ckpt models/raftstereo_carla.pth --corr_implementation alt --mixed_precision -l=datasets/ssh/20240312/scene00/rectified_gamma_22/camera02/*/*.png -r=datasets/ssh/20240312/scene00/rectified_gamma_22/camera01/*/*.png
+python demo.py --restore_ckpt models/raftstereo_carla.pth --corr_implementation alt --mixed_precision -l=datasets/ssh/20240312/scene01/rectified_gamma_22/camera02/*/*.png -r=datasets/ssh/20240312/scene01/rectified_gamma_22/camera01/*/*.png
+python demo.py --restore_ckpt models/raftstereo_carla.pth --corr_implementation alt --mixed_precision -l=datasets/ssh/20240312/scene02/rectified_gamma_22/camera02/*/*.png -r=datasets/ssh/20240312/scene02/rectified_gamma_22/camera01/*/*.png
+python demo.py --restore_ckpt models/raftstereo_carla.pth --corr_implementation alt --mixed_precision -l=datasets/ssh/20240312/scene00/rectified_gamma_35/camera02/*/*.png -r=datasets/ssh/20240312/scene00/rectified_gamma_35/camera01/*/*.png
+python demo.py --restore_ckpt models/raftstereo_carla.pth --corr_implementation alt --mixed_precision -l=datasets/ssh/20240312/scene01/rectified_gamma_35/camera02/*/*.png -r=datasets/ssh/20240312/scene01/rectified_gamma_35/camera01/*/*.png
+python demo.py --restore_ckpt models/raftstereo_carla.pth --corr_implementation alt --mixed_precision -l=datasets/ssh/20240312/scene02/rectified_gamma_35/camera02/*/*.png -r=datasets/ssh/20240312/scene02/rectified_gamma_35/camera01/*/*.png
